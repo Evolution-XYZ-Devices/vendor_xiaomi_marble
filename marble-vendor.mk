@@ -6,10 +6,14 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/xiaomi/marble
 
 PRODUCT_COPY_FILES += \
+    vendor/xiaomi/marble/proprietary/product/etc/device_features/marble.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/device_features/marble.xml \
+    vendor/xiaomi/marble/proprietary/product/etc/device_features/marblein.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/device_features/marblein.xml \
     vendor/xiaomi/marble/proprietary/product/etc/permissions/UimGba.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimGba.xml \
     vendor/xiaomi/marble/proprietary/product/etc/permissions/UimGbaManager.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimGbaManager.xml \
     vendor/xiaomi/marble/proprietary/product/etc/permissions/UimService.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimService.xml \
     vendor/xiaomi/marble/proprietary/system/etc/sysconfig/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml \
+    vendor/xiaomi/marble/proprietary/system/lib/vendor.xiaomi.hardware.displayfeature@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.xiaomi.hardware.displayfeature@1.0.so \
+    vendor/xiaomi/marble/proprietary/system/lib64/vendor.xiaomi.hardware.displayfeature@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.xiaomi.hardware.displayfeature@1.0.so \
     vendor/xiaomi/marble/proprietary/system_ext/bin/dpmd:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/dpmd \
     vendor/xiaomi/marble/proprietary/system_ext/bin/tcmd:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/tcmd \
     vendor/xiaomi/marble/proprietary/system_ext/etc/dpm/dpm.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/dpm/dpm.conf \
