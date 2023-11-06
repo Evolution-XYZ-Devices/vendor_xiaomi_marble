@@ -152,6 +152,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/marble/proprietary/vendor/bin/hw/android.hardware.keymaster@4.1-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.keymaster@4.1-service-qti \
     vendor/xiaomi/marble/proprietary/vendor/bin/hw/android.hardware.security.keymint-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.security.keymint-service-qti \
     vendor/xiaomi/marble/proprietary/vendor/bin/hw/dolbycodec2:$(TARGET_COPY_OUT_VENDOR)/bin/hw/dolbycodec2 \
+    vendor/xiaomi/marble/proprietary/vendor/bin/hw/mfp-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/hw/mfp-daemon \
     vendor/xiaomi/marble/proprietary/vendor/bin/hw/qconfigservice:$(TARGET_COPY_OUT_VENDOR)/bin/hw/qconfigservice \
     vendor/xiaomi/marble/proprietary/vendor/bin/hw/qcrilNrd:$(TARGET_COPY_OUT_VENDOR)/bin/hw/qcrilNrd \
     vendor/xiaomi/marble/proprietary/vendor/bin/hw/qvrservice:$(TARGET_COPY_OUT_VENDOR)/bin/hw/qvrservice \
@@ -764,6 +765,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/marble/proprietary/vendor/etc/init/ims_rtp_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ims_rtp_daemon.rc \
     vendor/xiaomi/marble/proprietary/vendor/etc/init/imsdaemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/imsdaemon.rc \
     vendor/xiaomi/marble/proprietary/vendor/etc/init/init.embmssl_server.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.embmssl_server.rc \
+    vendor/xiaomi/marble/proprietary/vendor/etc/init/init.mfp-daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.mfp-daemon.rc \
     vendor/xiaomi/marble/proprietary/vendor/etc/init/init.qdmastats.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qdmastats.rc \
     vendor/xiaomi/marble/proprietary/vendor/etc/init/init.qti.fm.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qti.fm.rc \
     vendor/xiaomi/marble/proprietary/vendor/etc/init/init.qti.media.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qti.media.rc \
@@ -2183,6 +2185,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/marble/proprietary/vendor/lib64/camx.provider@2.5-legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camx.provider@2.5-legacy.so \
     vendor/xiaomi/marble/proprietary/vendor/lib64/camx.provider@2.6-legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camx.provider@2.6-legacy.so \
     vendor/xiaomi/marble/proprietary/vendor/lib64/camx.provider@2.7-legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camx.provider@2.7-legacy.so \
+    vendor/xiaomi/marble/proprietary/vendor/lib64/com.fingerprints.extension@3.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.fingerprints.extension@3.0.so \
     vendor/xiaomi/marble/proprietary/vendor/lib64/com.qti.chiusecaseselector.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.chiusecaseselector.so \
     vendor/xiaomi/marble/proprietary/vendor/lib64/com.qti.feature2.anchorsync.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.anchorsync.so \
     vendor/xiaomi/marble/proprietary/vendor/lib64/com.qti.feature2.demux.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qti.feature2.demux.so \
@@ -2257,8 +2260,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/marble/proprietary/vendor/lib64/hw/com.qti.chi.override.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/com.qti.chi.override.so \
     vendor/xiaomi/marble/proprietary/vendor/lib64/hw/consumerir.qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/consumerir.qcom.so \
     vendor/xiaomi/marble/proprietary/vendor/lib64/hw/displayfeature.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/displayfeature.default.so \
-    vendor/xiaomi/marble/proprietary/vendor/lib64/hw/fingerprint.fpc.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.fpc.default.so \
-    vendor/xiaomi/marble/proprietary/vendor/lib64/hw/fingerprint.goodix.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.goodix.default.so \
+    vendor/xiaomi/marble/proprietary/vendor/lib64/hw/fingerprint.fpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.fpc.so \
+    vendor/xiaomi/marble/proprietary/vendor/lib64/hw/fingerprint.goodix.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.goodix.so \
     vendor/xiaomi/marble/proprietary/vendor/lib64/hw/gyro_fusion_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gyro_fusion_interface.so \
     vendor/xiaomi/marble/proprietary/vendor/lib64/hw/sound_trigger.primary.taro.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sound_trigger.primary.taro.so \
     vendor/xiaomi/marble/proprietary/vendor/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so \
@@ -3071,6 +3074,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/marble/proprietary/vendor/lib64/vendor.xiaomi.hardware.campostproc@1.0-service-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.campostproc@1.0-service-impl.so \
     vendor/xiaomi/marble/proprietary/vendor/lib64/vendor.xiaomi.hardware.campostproc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.campostproc@1.0.so \
     vendor/xiaomi/marble/proprietary/vendor/lib64/vendor.xiaomi.hardware.displayfeature@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.displayfeature@1.0.so \
+    vendor/xiaomi/marble/proprietary/vendor/lib64/vendor.xiaomi.hardware.fingerprintextension@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.fingerprintextension@1.0.so \
     vendor/xiaomi/marble/proprietary/vendor/lib64/vendor.xiaomi.hardware.fx.tunnel@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.fx.tunnel@1.0.so \
     vendor/xiaomi/marble/proprietary/vendor/lib64/vendor.xiaomi.hardware.mfidoca@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.mfidoca@1.0.so \
     vendor/xiaomi/marble/proprietary/vendor/lib64/vendor.xiaomi.hardware.mlipay@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.mlipay@1.0.so \
@@ -3083,6 +3087,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/marble/proprietary/vendor/lib64/vendor.xiaomi.hardware.tidaservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.tidaservice@1.0.so \
     vendor/xiaomi/marble/proprietary/vendor/lib64/vendor.xiaomi.hardware.tidaservice@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.tidaservice@1.1.so \
     vendor/xiaomi/marble/proprietary/vendor/lib64/vendor.xiaomi.hardware.tidaservice@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.tidaservice@1.2.so \
+    vendor/xiaomi/marble/proprietary/vendor/lib64/vendor.xiaomi.hw.touchfeature@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hw.touchfeature@1.0.so \
     vendor/xiaomi/marble/proprietary/vendor/lib64/vendor.xiaomi.sensor.citsensorservice@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.sensor.citsensorservice@1.1.so \
     vendor/xiaomi/marble/proprietary/vendor/lib64/vendor.xiaomi.sensor.citsensorservice@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.sensor.citsensorservice@2.0.so \
     vendor/xiaomi/marble/proprietary/vendor/lib64/vendor.xiaomi.sensor.communicate@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.sensor.communicate@1.0.so
@@ -3117,6 +3122,7 @@ PRODUCT_PACKAGES += \
     uimgbamanagerlibrary \
     uimservicelibrary \
     com.android.hotwordenrollment.common.util \
+    AHBF@2.1-service \
     com.qti.dpmframework \
     dpmapi \
     qcrilhook \
