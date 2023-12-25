@@ -2728,8 +2728,6 @@ PRODUCT_PACKAGES += \
     HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND \
     HotwordEnrollmentXGoogleHEXAGON_WIDEBAND \
     ImsRcsService \
-    PerformanceMode \
-    PowerSaveMode \
     QtiTelephony \
     QtiTelephonyService \
     colorservice \
